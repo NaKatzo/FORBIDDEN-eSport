@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORBIDDEN eSport website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #002163;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            background-color: #0085a7;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover, nav a.active {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #002163;
+            color: white;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .team-members, .achievements, .gallery, .upcoming-events, .testimonials, .blog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .team-members .member, .achievements .achievement, .gallery .photo, .upcoming-events .event, .testimonials .testimonial, .blog .post {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .team-members .member:hover, .achievements .achievement:hover, .gallery .photo:hover, .upcoming-events .event:hover, .testimonials .testimonial:hover, .blog .post:hover {
+            transform: translateY(-10px);
+        }
+        .team-members .member img, .gallery .photo img, .blog .post img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .contact-form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact-form h2 {
+            margin-top: 0;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #064ddb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #444;
+        }
+        .social-media {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-media a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-media a:hover {
+            color: #007BFF;
+        }
+        .faq {
+            margin: 20px 0;
+        }
+        .faq h2 {
+            margin-top: 0;
+        }
+        .faq .question {
+            margin: 10px 0;
+        }
+        .faq .question h3 {
+            margin: 0;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .faq .question h3:hover {
+            color: #007BFF;
+        }
+        .faq .answer {
+            display: none;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FORBIDDEN eSport</h1>
+    <p>Selamat datang di halaman profil resmi FORBIDDEN eSports kami</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#history">History</a>
+    <a href="#members">Members</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#events">Events</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#blog">Blog</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="content" id="home">
+    <div class="card" id="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah tim eSports beginner berpengalaman yang berkompetisi di berbagai turnamen Mobile Legends. Dengan semangat dan dedikasi, kami selalu berusaha memberikan yang terbaik dalam setiap pertandingan.</p>
+        <img src="https://officialforbidden.com/cdn/shop/files/ForbiddenFINALblkBKGRND_e371b4e2-2b48-4f42-92b6-efec2bca647d_1000x.png?v=1681843464" height="200px" width="700px" alt="Tim eSports">
+    </div>
+    <div class="card" id="history">
+        <h2>Sejarah Tim</h2>
+        <p>Tim eSports kami dibentuk pada tahun 2023 dengan tujuan untuk menjadi salah satu tim terbaik di sekolah dan Indonesia. Selama 1 tahun, kami telah mengalami berbagai macam tantangan dan pencapaian yang cukup baik.</p>
+        <img src="images/Screenshot (14).png" height="300px" width="500px" alt="Sejarah Tim">
+    </div>
+    <div class="card" id="members">
+        <h2>Anggota Tim</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="images/weweq.jpg" height="150px" width="200px" alt="Anggota 1">
+                <h3>Muh. Gathan Naufal K.</h3>
+                <p>Role: EXPLane/Captain</p>
+            </div>
+            <div class="member">
+                <img src="images/wewewe.png" height="150px" width="200px" alt="Anggota 2">
+                <h3>Muh. Fazlee Mawla</h3>
+                <p>Role: Jungler</p>
+            </div>
+            <div class="member">
+                <img src="images/q.jpg" height="150px" width="200px" alt="Anggota 3">
+                <h3>Ediz Mika Rahil</h3>
+                <p>Role: GOLDLane</p>
+            </div>
+            <div class="member">
+                <img src="images/w.jpg" height="150px" width="200px" alt="Anggota 4">
+                <h3>Muh. Hafiz Elhajj</h3>
+                <p>Role: MIDLane</p>
+            </div>
+            <div class="member">
+                <img src="images/qwe.jpg" height="150px" width="200px" alt="Anggota 5">
+                <h3>Arli Arlilotte</h3>
+                <p>Role: Roam</p> 
+            </div>
+            <div class="member">
+                <img src="images/e.jpg" height="150px" width="200px" alt="Anggota 5">
+                <h3>Riski Akbar Maudan</h3>
+                <p>Role: Roam</p> 
+            </div>
+            <div class="member">
+                <img src="images/r.jpg" height="150px" width="200px" alt="Anggota 5">
+                <h3>Rakha Fausta D.</h3>
+                <p>Role: MIDLane</p> 
+            </div>
+            <div class="member">
+                <img src="images/t.jpg" height="150px" width="200px" alt="Anggota 5">
+                <h3>Rizki Akbar Karamuhu</h3>
+                <p>Coach/Roaster</p> 
+            </div>
+        </div>
+    </div>
+    <div class="card" id="achievements">
+        <h2>Prestasi</h2>
+        <div class="achievements">
+            <div class="achievement">
+                <img src="images/56.png" height="200px" width="300px" alt="fotoq">
+                <h3>MAGNIFICENT M9</h3>
+                <p>16 Besar - Mei 2024</p>
+            </div>
+            <div class="achievement">
+                <img src="images/34.png" height="200px" width="300px" alt="fotoq">
+                <h3>GRANTHA FEST 41</h3>
+                <p>16 Besar - Mei 2023</p>
+            </div>
+            <div class="achievement">
+                <img src="images/12.jpg" height="200px" width="300px" alt="fotoq">
+                <h3>SPARTA SEASON 95</h3>
+                <p>16 Besar - Mei 2022</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="gallery">
+        <h2>Galeri Foto</h2>
+        <div class="gallery">
+            <div class="photo">
+                <img src="images/WhatsApp Image 2024-05-15 at 23.36.43_56ed6ade.jpg" height="200px" width="300px" alt="Foto 1">
+            </div>
+            <div class="photo">
+                <img src="images/WhatsApp Image 2024-05-15 at 23.41.30_2950dbcf.jpg" height="200px" width="300px" alt="Foto 2">
+            </div>
+            <div class="photo">
+                <img src="images/WhatsApp Image 2024-05-15 at 23.44.57_fb70948e.jpg" height="200px" width="300px" alt="Foto 3">
+            </div>
+            <div class="photo">
+                <img src="images/WhatsApp Image 2024-05-15 at 23.45.08_3ab234c6.jpg" height="200px" width="300px" alt="Foto 4">
+            </div>
+            <div class="photo">
+                <img src="images/WhatsApp Image 2024-05-15 at 23.47.21_708b796a.jpg" height="300px" width="400px" alt="Foto 5">
+            </div>
+        </div>
+    </div>
+    <div class="card" id="events">
+        <h2>Acara Mendatang</h2>
+        <div class="upcoming-events">
+            <div class="event">
+                <img src="images/111111111.jpg" height="300px" width="300px" alt="fotoq">
+                <h3>Magnificent M9</h3>
+                <p>Mei 2024</p>
+            </div>
+            <div class="event">
+                <img src="images/222222222222222222.jpg" height="300px" width="300px" alt="fotoq">
+                <h3>Grantha Fest 41</h3>
+                <p>Mei 2024</p>
+            </div>
+            <div class="event">
+                <img src="images/333333333333333333333.jpg" height="300px" width="300px" alt="fotoq">
+                <h3>Valenzo Organizer</h3>
+                <p>Mei 2024</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="testimonials">
+        <h2>Testimonial</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Tim ini selalu memberikan performa terbaik di setiap turnamen!" - Pendukung</p>
+            </div>
+            <div class="testimonial">
+                <p>"Kerjasama dan strategi tim yang sangat solid." - Pendukung</p>
+            </div>
+            <div class="testimonial">
+                <p>"Bangga bisa mendukung tim ini dalam perjalanan mereka." - Pendukung</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="blog">
+        <h2>Blog</h2>
+        <div class="blog">
+            <div class="post">
+                <img src="images/perjalanan.jpg" height="200px" width="800px" alt="Blog 1">
+                <h3>Perjalanan Menuju Kejuaraan</h3>
+                <p>Kisah di balik perjuangan kami di turnamen terbaru.</p>
+            </div>
+            <div class="post">
+                <img src="images/strategi.jpg" height="200px" width="800px" alt="Blog 2">
+                <h3>Strategi dan Latihan</h3>
+                <p>Bagaimana kami mempersiapkan diri untuk pertandingan besar.</p>
+            </div>
+            <div class="post">
+                <img src="images/latih.jpg" height="200px" width="800px" alt="Blog 3">
+                <h3>Latih Tanding</h3>
+                <p>Pengalaman kami bertemu dan berlatih dengan tim lainnya.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="faq">
+        <h2>FAQ</h2>
+        <div class="faq">
+            <div class="question">
+                <h3>Bagaimana cara bergabung dengan tim?</h3>
+                <div class="answer">
+                    <p>Untuk bergabung dengan tim, Anda perlu mengikuti seleksi yang kami adakan secara berkala. Informasi lebih lanjut akan diumumkan di media sosial kami.</p>
+                </div>
+            </div>
+            <div class="question">
+                <h3>Apa saja prestasi terbesar tim ini?</h3>
+                <div class="answer">
+                    <p>Prestasi terbesar kami termasuk menjadi peserta 16 besar di SPARTA Season 95 Indonesia, serta meraih 16 besar di GRANTHA FEST 41.</p>
+                </div>
+            </div>
+            <div class="question">
+                <h3>Dimana saya bisa bertemu dengan anggota tim?</h3>
+                <div class="answer">
+                    <p>Base camp kami berada di MAN 1 Bandar Lampung kelas 10-3 atau di acara-acara di mana kami berpartisipasi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card contact-form" id="contact">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</div>
+
+<div class="social-media">
+    <a href="https://www.facebook.com/share/GUeZQU4LYMtJi1s4/?mibextid=qi2Omg" target="_blank">Facebook</a>
+    <a href="https://x.com/achlysyora?t=q0br5u04g1CUNpEUV4beVA&s=08" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/xthressure?igsh=MWJ4M2NkaXNjZ3doag==" target="_blank">Instagram</a>
+    <a href="https://youtube.com/@xthressure?si=i1n3LmfELf7ljkNi" target="_blank">YouTube</a>
+</div>
+
+<footer>
+    <p>&copy; 2023 FORBIDDEN eSport. Xthressure Class.</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('nav a');
+        const faqQuestions = document.querySelectorAll('.faq .question h3');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - document.querySelector('header').offsetHeight,
+                    behavior: 'smooth'
+                });
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
